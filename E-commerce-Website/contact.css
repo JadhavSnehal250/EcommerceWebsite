@@ -1,0 +1,125 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d2dfea; /* Light grey background */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center align the container */
+}
+
+.section_title {
+    margin-bottom: 50px; /* Space below the section title */
+}
+
+.section_title h1 {
+    font-size: 2.5rem; /* Large font size for section title */
+    font-weight: bold;
+}
+
+.contact {
+    padding: 80px 0; /* Padding around the contact section */
+}
+
+.contact .row {
+    margin-bottom: 30px; /* Space between rows */
+}
+
+.contact .border {
+    border-color: #28a745; /* Green border color */
+}
+
+.contact .border-primary {
+    border-color: #007bff; /* Blue border color */
+}
+
+.contact .border-danger {
+    border-color: #dc3545; /* Red border color */
+}
+
+.contact .rounded {
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.contact .shadow {
+    box-shadow: 0 0.5rem 1rem rgba(22, 20, 20, 0.15); /* Shadow effect */
+}
+
+.contact .text-center {
+    text-align: center; /* Center align text */
+}
+
+.contact .p-3 {
+    padding: 1rem; /* Padding inside the border */
+}
+
+.contact .mb-4 {
+    margin-bottom: 1.5rem; /* Space below icon */
+}
+
+.contact .fa-3x {
+    font-size: 3rem; /* Large icon size */
+}
+
+.contact h3 {
+    font-size: 1.5rem; /* Medium heading size */
+}
+
+.contact p {
+    font-size: 1rem; /* Small paragraph size */
+    margin-bottom: 0; /* Remove default bottom margin */
+}
+
+.contact form {
+    background-color: #2a3f50; /* White background for form */
+    padding: 30px; /* Padding inside form */
+    border: 1px solid #dee2e6; /* Light grey border */
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.contact form label {
+    font-weight: bold; /* Bold labels */
+}
+
+.contact form .form-control {
+    width: 100%; /* Full width input fields */
+    margin-bottom: 15px; /* Space below input fields */
+    padding: 10px; /* Padding inside input fields */
+    font-size: 1rem; /* Default font size */
+    border: 1px solid #ced4da; /* Light grey border */
+    border-radius: 0.25rem; /* Slightly rounded corners */
+}
+
+.contact form textarea.form-control {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+.contact form .btn-primary {
+    background-color: #007bff; /* Blue button background color */
+    color: #fff; /* White button text color */
+    border: none; /* Remove button border */
+    padding: 10px 20px; /* Padding inside button */
+    font-size: 1rem; /* Button text size */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.contact form .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section_title h1 {
+        font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+    
+    .contact .col-md-4 {
+        margin-bottom: 20px; /* Space between columns on smaller screens */
+    }
+    
+    .contact form {
+        padding: 20px; /* Reduced padding inside form on smaller screens */
+    }
+}

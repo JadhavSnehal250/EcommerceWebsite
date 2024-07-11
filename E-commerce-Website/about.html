@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All products - AttireModique | ommerce Website Design</title>
+  <link rel="stylesheet" href="./style/cart.css">
+  <link rel="stylesheet" href="./style/about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/Logo.svg" width="100px">
+        </div>
+        <nav>
+          <ul>
+            <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="productdetail.html">Product View</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <img src="images/logo1.jpg" style="mix-blend-mode: multiply;" width="30px" height="30px">
+        <img src="images/icons8-menu.svg" class="menu-icon" onclick="menutoggle()">
+      </div>
+    </div>
+   <div class="About Us">
+    <div class="small-content">
+      <h2>About Us</h2>
+      <p>AttireModique is a clothing brand that is based in the United States.
+        We are a small business that is dedicated to providing high quality clothing at affordable prices.<br>
+    Connect the consumer to the business on a deeper level
+    Provide contextual insight into why the founders created the business
+    Share the business’s core values, mission, beliefs, and vision
+    Answer any questions that consumers may have about the business</p>
+    </div>
+  </div>
+
+<!-- ==============about ends here============== -->
+
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>Titan is the largest and most trusted watch brand in India with unique & innovative design. Shop Now From
+              An Inspired & Contemporary Range of Elegant Titan Men Watches Collection. </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <img src="images/founder.jpg">
+            <h3>Xerxes Desai</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>Titan is the largest and most trusted watch brand in India with unique & innovative design. Shop Now From
+              An Inspired & Contemporary Range of Elegant Titan Men Watches Collection. </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <img src="images/found2.webp">
+            <h3>Sachin Bansal</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>Titan is the largest and most trusted watch brand in India with unique & innovative design. Shop Now From
+              An Inspired & Contemporary Range of Elegant Titan Men Watches Collection. </p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <img src="images/nandita.png">
+            <h3>Nandita Sinha</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+      
+ <!------------------ footer ----------------->
+
+ <footer id="footer">
+  <div class="links">
+    <h3>Follow Us</h3>
+       <ul>
+           <li>Facebook</li>
+           <li>Twitter</li>
+           <li>Instagram</li>
+           <li>Youtube</li>
+       </ul>
+  </div>
+  <div class="footer-logo-section">
+    <img src="/images/Logo.svg" width="100px" alt="logo">
+    <p>@Copyright AM 2024 </p>
+  </div>
+  <div class="footer-links">
+    <div class="links-section">
+      <a href="/index.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+     </div>
+    </div>
+  </div>
+
+   <!------------------js for toggle menu----------------->
+   <script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+    if(MenuItems.style.maxHeight == "0px")
+    {
+      MenuItems.style.maxHeight = "200px";
+    }
+    else
+    {
+    MenuItems.style.maxHeight = "0px";
+    }
+    }
+    </script>
+ 
+   

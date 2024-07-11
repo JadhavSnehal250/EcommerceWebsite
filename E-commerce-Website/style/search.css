@@ -1,0 +1,193 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Lora', serif; /* Use Lora font for the entire page */
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Light grey background */
+}
+
+.container {
+    max-width: 1200px; /* Maximum width for content */
+    margin: 0 auto; /* Center align the container */
+    padding: 0 20px; /* Padding for the content inside the container */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #ffffff; /* White background for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.navbar .logo img {
+    width: 100px; /* Logo image width */
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar nav ul li {
+    margin-right: 30px; /* Space between menu items */
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #333333; /* Text color for menu items */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.navbar nav ul li a:hover {
+    color: #007bff; /* Blue color on hover */
+}
+
+.navbar img.menu-icon {
+    display: none; /* Hide menu icon on larger screens */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+        padding: 15px 0; /* Adjust padding */
+    }
+
+    .navbar .logo img {
+        width: 80px; /* Adjust logo size */
+    }
+
+    .navbar nav {
+        margin-top: 15px; /* Space between logo and menu items */
+    }
+
+    .navbar nav ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .navbar nav ul li {
+        margin-right: 0; /* Remove margin between menu items */
+        margin-bottom: 5px; /* Space between stacked menu items */
+    }
+
+    .navbar img.menu-icon {
+        display: block; /* Show menu icon */
+        cursor: pointer; /* Pointer cursor on hover */
+    }
+
+    .navbar #MenuItems {
+        position: absolute; /* Position the menu items */
+        background: #ffffff; /* White background */
+        width: 100%; /* Full width */
+        z-index: 1000; /* Ensure menu appears above other content */
+        left: -100%; /* Hide menu off screen by default */
+        transition: all 0.5s ease; /* Smooth transition animation */
+    }
+
+    .navbar .menu-icon:hover ~ #MenuItems {
+        left: 0; /* Show menu on hover */
+    }
+
+    .navbar nav ul li a {
+        padding: 10px; /* Padding for menu items */
+        width: 100%; /* Full width */
+        display: block; /* Display as block element */
+    }
+}
+
+/* Search section styles */
+.search_section {
+    background-color: #aac9d7; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    border-radius: 12px; /* Rounded corners */
+    padding: 30px; /* Padding inside the search section */
+    margin-top: 40px; /* Top margin */
+}
+
+.title h2 {
+    color: #007bff; /* Blue color for the title */
+    font-size: 24px; /* Larger font size */
+    margin-bottom: 5px; /* Bottom margin for title */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Space below the search input */
+}
+
+.input-group input.form-control {
+    border: 1px solid #ced4da; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px; /* Padding inside input */
+    font-size: 16px; /* Font size */
+    width: 90%; /* Full width */
+}
+
+.input-group-btn button.btn-primary {
+    border-radius: 8px; /* Rounded corners for button */
+    padding: 12px 20px; /* Padding inside button */
+    font-size: 16px; /* Font size */
+}
+
+.small {
+    font-size: 14px; /* Smaller font size */
+    color: #6c757d; /* Grey color for small text */
+}
+
+.table-responsive {
+    overflow-x: auto; /* Horizontal scroll for small screens */
+    border: 1px solid #dee2e6; /* Border color for table */
+    border-radius: 8px; /* Rounded corners */
+    margin-top: 20px; /* Top margin */
+    padding: 10px; /* Padding inside table responsive */
+}
+
+.table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa; /* Light grey background on hover */
+}
+
+.table td,
+.table th {
+    padding: 12px; /* Padding inside table cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #dee2e6; /* Border color for rows */
+}
+
+.table th {
+    background-color: #007bff; /* Blue background for table header */
+    color: #ffffff; /* White color for table header text */
+    font-weight: bold; /* Bold font weight */
+}
+
+.table td.image img {
+    max-width: 80px; /* Max width for product image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.table td.product {
+    max-width: 300px; /* Max width for product description */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis for overflow */
+}
+
+.table td.rate span {
+    color: #ffc107; /* Yellow color for star ratings */
+}

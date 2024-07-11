@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All products - AttireModique | ommerce Website Design</title>
+    <link rel="stylesheet" href="./style/cart.css">
+    <link rel="stylesheet" href="./style/checkout.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet">
+  </head>
+
+<body>
+
+
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/Logo.svg" width="100px">
+        </div>
+        <nav>
+          <ul>
+            <ul id="MenuItems">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Product View</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Account</a></li>
+          </ul>
+        </nav>
+        <img src="images/logo1.jpg" style="mix-blend-mode: multiply;" width="30px" height="30px">
+        <img src="images/icons8-menu.svg" class="menu-icon" onclick="menutoggle()">
+      </div>
+    </div>
+     
+    <body>
+        <div class="container">
+            <div class="section">
+                <h2>Billing Details</h2>
+                <form id="billingForm">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" name="address" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip">ZIP Code</label>
+                        <input type="text" id="zip" name="zip" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn">✔Purchase </button>
+            </div>
+            <div class="summary">
+                <h2>Order Summary</h2>
+                <ul>
+                    <li>
+                        <span>Product 1</span>
+                        <span>Quantity: 2</span>
+                        <span>$25.98</span>
+                    </li>
+                    <li>
+                        <span>Product 2</span>
+                        <span>Quantity: 1</span>
+                        <span>$15.99</span>
+                    </li>
+                    <li>
+                        <strong>Total:</strong>
+                        <strong>$41.97</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+        <script>
+            const billingForm = document.getElementById('billingForm');
+            billingForm.addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                alert('ORder confirmed'); 
+            });
+        </script>
+    </body>
+    </html>
+    
+
+     <!------------------ footer ----------------->
+
+   <footer id="footer">
+    <div class="links">
+      <h3>Follow Us</h3>
+         <ul>
+             <li>Facebook</li>
+             <li>Twitter</li>
+             <li>Instagram</li>
+             <li>Youtube</li>
+         </ul>
+    </div>
+    <div class="footer-logo-section">
+      <img src="/images/Logo.svg" width="100px" alt="logo">
+      <p>@Copyright AM 2024 </p>
+    </div>
+    <div class="footer-links">
+      <div class="links-section">
+        <a href="/index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+       </div>
+      </div>
+    </div>
+ 
+     <!------------------js for toggle menu----------------->
+     <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle(){
+      if(MenuItems.style.maxHeight == "0px")
+      {
+        MenuItems.style.maxHeight = "200px";
+      }
+      else
+      {
+      MenuItems.style.maxHeight = "0px";
+      }
+      }
+      </script>
+   
+     
